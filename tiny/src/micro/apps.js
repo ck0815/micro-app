@@ -8,26 +8,25 @@ const apps = [
    * activeRule: 微应用触发的路由规则 - 触发路由规则后将加载该微应用
    */
   {
-    name: "vue1",
-    entry: "//localhost:8001/app1",
-    // entry: "//192.168.70.72/app1",
+    name: "app1",
+    // entry: "//localhost:8001/app1",
+    entry: "//192.168.70.72/app1",
     container: "#root-view",
-    activeRule: "/vue1"
+    activeRule: "/app1"
   },
   {
-    name: "vue2",
-    entry: "//localhost:8002/app2",
-    // entry: "//192.168.70.72/app2",
-
+    name: "app2",
+    // entry: "//localhost:8002/app2",
+    entry: "//192.168.70.72/app2",
     container: "#root-view",
-    activeRule: "/vue2"
+    activeRule: "/app2"
   },
   {
-    name: "vue3",
-    entry: "//localhost:8003/app3",
-    // entry: "//192.168.70.72/app3",
+    name: "app3",
+    // entry: "//localhost:8003/app3",
+    entry: "//192.168.70.72/app3",
     container: "#root-view",
-    activeRule: "/vue3"
+    activeRule: "/app3"
   }
 ];
 

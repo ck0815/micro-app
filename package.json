@@ -7,23 +7,18 @@
     "examples:install": "npm-run-all --serial install:*",
     "examples:start": "npm-run-all --parallel start:*",
     "examples:build": "npm-run-all --parallel build:*",
-
     "install:main": "cd tiny && npm install",
     "start:main": "cd tiny && npm run serve",
     "build:main": "cd tiny && npm run build",
-
     "install:vue1": "cd app1 && npm install",
     "start:vue1": "cd app1 && npm run serve",
     "build:vue1": "cd app1 && npm run build",
-
     "install:vue2": "cd app2 && npm install",
     "start:vue2": "cd app2 && npm run serve",
     "build:vue2": "cd app2 && npm run build",
-
     "install:vue3": "cd app3 && npm install",
     "start:vue3": "cd app3 && npm run serve",
     "build:vue3": "cd app3 && npm run build"
-
   },
   "author": "",
   "license": "ISC",

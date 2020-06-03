@@ -51,19 +51,19 @@ export default {
             path: '/'
           },
           {
-            key: 'vue1',
+            key: 'app1',
             name: 'Vue 第一个子应用',
-            path: '/vue1'
+            path: '/app1'
           },
           {
-            key: 'vue2',
+            key: 'app2',
             name: 'Vue 第二个子应用',
-            path: '/vue2'
+            path: '/app2'
           },
           {
-            key: 'vue3',
+            key: 'app3',
             name: 'Vue 第三个子应用',
-            path: '/vue3'
+            path: '/app3'
           }
         ]
       }
