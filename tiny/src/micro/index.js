@@ -23,24 +23,27 @@ import {
  */
 registerMicroApps(apps, {
   // qiankun 生命周期钩子 - 加载前
-  beforeLoad: app => {
+  beforeLoad: () => {
     // 加载子应用前，加载进度条
     NProgress.start()
-
-    console.log("加载前", app);
+    // console.log("注册子应用 - 加载前", app);
   },
   // 挂载前回调
-  beforeMount: app => {
-    console.log("挂载前回调", app);
+  beforeMount: () => {
+    // console.log("注册子应用 - 挂载前回调", app);
   },
+
   // 挂载后回调
-  afterUnmount: app => {
+  afterMount: () => {
     // 加载子应用前，进度条加载完成
     NProgress.done()
-    // 
-    console.log("挂载后回调", app);
-  }
+    // console.log("注册子应用 - 挂载后回调", app);
+  },
+
   // 卸载后回调
+  afterUnmount: () => {
+    // console.log("注册子应用 - 卸载后回调", app);
+  }
 })
 
 /**
