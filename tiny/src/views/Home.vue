@@ -3,6 +3,9 @@
     <img alt="Vue logo" src="../assets/logo.png" />
     <p>主应用</p>
     <el-button type="success" plain @click="callChren">传参给子应用</el-button>
+    <!--  -->
+    <el-button type="success" plain @click="callChrenCon">传组件给子应用</el-button>
+
     <p>{{ data.msg }}</p>
     <!-- <p>{{ data.msgs }}</p> -->
   </div>
@@ -11,6 +14,9 @@
 <script>
 // @ is an alias to /src
 import actions from '@/shared/actions'
+
+// 引入模板a
+import html from '@/components/a.vue'
 
 export default {
   name: 'Home',
@@ -42,6 +48,12 @@ export default {
       this.data.msg = '父组件传递得参数 - ' + Math.round(Math.random() * 100)
       //设置 token
       actions.setGlobalState(this.data)
+    },
+
+    //
+    callChrenCon() {
+      //设置
+      actions.setGlobalState({ tpl: html })
     }
   }
 }

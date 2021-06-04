@@ -9,22 +9,22 @@ const apps = [
    */
   {
     name: "app1",
-    // entry: "//localhost:8001/app1",
-    entry: "//192.168.70.72/app1",
+    entry: "//localhost:8001",
+    // entry: "//192.168.70.72/app1",
     container: "#root-view",
     activeRule: "/app1"
   },
   {
     name: "app2",
-    // entry: "//localhost:8002/app2",
-    entry: "//192.168.70.72/app2",
+    entry: "//localhost:8002",
+    // entry: "//192.168.70.72/app2",
     container: "#root-view",
     activeRule: "/app2"
   },
   {
     name: "app3",
-    // entry: "//localhost:8003/app3",
-    entry: "//192.168.70.72/app3",
+    entry: "//localhost:8003",
+    // entry: "//192.168.70.72/app3",
     container: "#root-view",
     activeRule: "/app3"
   }

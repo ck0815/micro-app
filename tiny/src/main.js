@@ -10,8 +10,9 @@ import routes from './router'
 // 启动微服务
 import startQiankun from "./micro";
 
-Vue.use(ElementUI);
+Vue.use(ElementUI)
 Vue.use(VueRouter)
+
 
 // 启动qiankun
 startQiankun();
